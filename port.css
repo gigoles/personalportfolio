@@ -6,7 +6,7 @@ html{
 	margin: 0;
 }
 nav{
-height:5vh
+
 	background-color: #FCDFCD;
 	display: flex;
 	justify-content: flex-end;
@@ -54,7 +54,7 @@ ul{
 text-decoration: none;
 }
 #welcome-section{
-	height: 90vh;
+	height: 100vh;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
@@ -68,7 +68,6 @@ text-decoration: none;
 #welcome-section::after{
 content: '';
 position: absolute;
-margin: 200px 300px;
 top: 0;
 left: 0;
 bottom: 0;
@@ -82,7 +81,7 @@ color: white;
 }
 @media(max-width: 480px){
 	#welcome-section::after{
-		margin: 250px 0px 340px 0;
+		
 	}
 }
 #welcome-section h1{

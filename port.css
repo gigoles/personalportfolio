@@ -66,7 +66,10 @@ ul{
 text-decoration: none;
 }
 #welcome-section{
+        padding-top:0px
+        margin-top:0px;
 	height: 100vh;
+        display:block;
 	width: 100%
 	background-size: cover;
 	background-position: center center;
@@ -76,8 +79,6 @@ text-decoration: none;
 	align-items: center;
 	flex-direction: column;
 	color: #F1DDCF;
-	padding-top: 0px;
-	margin-top: 0px;
 	
 }
 

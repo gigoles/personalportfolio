@@ -92,15 +92,14 @@ padding: 0;
 text-shadow: 2px 2px black;
 }
 #welcome-section p{
-	padding:  5px 20px;
+	padding:  5px;
 	background-color:#FF69B4;
 	text-shadow: 2px white; 
 }
 
 #projects{
 	text-align: center;
-	padding: 0px 40px;
-	padding-bottom: 10px;
+	padding: 0px;
 	flex-direction: row;
 
 

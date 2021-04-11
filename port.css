@@ -1,0 +1,272 @@
+
+*{
+margin: 0;
+padding: 0;
+	}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+@media(max-width: 75em){
+	html{
+		font-size: 60%;
+	}
+}
+@media(max-width: 61.25em){
+	html{
+		font-size: 58%;
+	}
+}
+@media(max-width: 28.75em){
+	html{
+		font-size: 55%;
+	}
+}
+body{
+	font-family: 'poppins',sans-serif
+	font-size:1.8rem;
+	font-weight: 400;
+	line-height: 1.4;
+	background-color:#BC8F8F ;
+	
+}
+h1{
+
+	font-family: 'Raleway',sans-serif;
+	font-weight: 700;
+	text-align: center;
+	
+}
+h1{
+font-size: 6rem;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+img{
+	display: block;
+	width: 100%;
+}
+nav{
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FCDFCD;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.4);
+	z-index: 10;
+	
+}
+.nav-list{
+	display: flex;
+	margin-right: 2rem;
+
+}
+@media(max-width: 28.75em){
+	.nav{
+		justify-content: center;
+	}
+	.nav-list{
+		margin:0.1rem;
+	}
+}
+.nav-list a{
+	display: block;
+	color: white;
+	font-size: 2.2rem;
+	padding: 2rem;
+}
+.nav-list a:hover{
+	background-color: #FF69B4
+	color:white;
+}
+
+#welcome-section{
+	display: flex;
+	background-size: cover;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%
+	padding-top: 0px;
+	margin-top: 0px;
+	background-color: #F1DDCF;
+	background-image: linear-gradient(62deg,#3a3d40 0%,#FF69B4 100%);
+	
+}
+#welcome-section>p{
+	font-size: 3rem;
+	font-weight: 200;
+	font-style: italic;
+	background-color:#FF69B4;
+}
+
+#projects{
+	text-align: center;
+	padding: 10rem 2rem;
+
+
+
+}
+#projects h1{
+	max-width: 640px;
+	margin: 0 auto;
+	border-bottom: 0.2rem;
+}
+@media(max-width: 28.75){
+     #projects h1{
+     	font-size: 4rem;
+     }
+	}
+.project-grid p{
+	background: pink;
+	transition: color 0.3s ease-out;
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+
+}
+.project-grid{
+	display: grid;
+	grid-template-rows: repeat(auto-fit, minmax(320px,1fr));
+	grid-gap: 4rem;
+	width: 100%;
+	max-width: 1280px
+	margin: 0 auto;
+	margin-bottom: 6rem;
+	
+}
+@media(max-width: 30.625em){
+	#projects{
+		padding: 6rem 1rem;
+	}
+	.project-grid{
+		grid-template-columns: 1fr;
+	}
+}
+.project-tile{
+	font-size: 2rem;
+	padding: 2rem 0.5rem
+}
+.project-tile img{
+	height: calc(50% - 6.8rem)
+	width:100%;
+	object-fit: cover;
+}
+.project-tile:hover{
+	transform: scale(1.1);
+	box-shadow:2px 2px 30px rgba(255,105,180);
+}
+img{
+	width: 100%;
+
+}
+a{
+	text-decoration: none;
+}
+#social{
+	text-align: center;
+	background-color:#FF69B4;
+	color: white;
+	padding: 20px; 
+	align-items: center;
+	justify-content: center;
+}
+#social h1{
+	margin-bottom: 0;
+	margin: 0;
+	padding-top: 20px;
+	letter-spacing: 1px;
+	font-size: 60px;
+
+}
+#social p{
+	font-size: 20px;
+	margin-top: 0;
+	letter-spacing: 1px;
+	color: white;
+
+}
+@media(max-width: 480px){
+	#social p{
+		font-size: 15px;
+	}
+}
+#social ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0;
+	padding: 20px 0;
+}
+#social ul li{
+	border-radius: 50%;
+	position: relative;
+	list-style-type: none;
+	display: block;
+	background:#171515;
+	line-height: 60px;
+	color: #666;
+	height: 60px;
+	width: 60px;
+	margin: 0 15px;
+	cursor: pointer;
+	transition: 0.5s;
+	
+}
+#social ul li:before{
+position: absolute;
+content: '';
+top: 0;
+left: 0;
+background:#d35400;
+height: 100%;
+width: 100%
+border-radius:50%;
+z-index: -1;
+transform: scale(0.9);
+transform: 5s;
+	}
+	#social ul li:hover:before{
+		filter: blur(3px);
+		transform: scale(1.2);
+		box-shadow: 0 0 15px #ffa502;
+
+	}
+	#social ul li:hover{
+		color: #ffa502;
+		box-shadow: 0 0 15px #FFFF;
+		text-shadow: 0 0 15px #FFFF;
+	}
+#social ul a{
+	padding: 15px;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+}
+footer{
+	font-weight: 300;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem;
+	background-color: black;
+	color: white;
+	border-top: 4px solid pink;
+
+	
+	
+}
+
+
